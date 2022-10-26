@@ -1,6 +1,6 @@
 def insertion_sort(li):
     for i in range(1, len(li)):
-        ins = 0
+        ins = i
         for j in range(0, i+1):
             if li[i] >= li[j]:
                 ins = j
