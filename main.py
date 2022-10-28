@@ -4,6 +4,7 @@ import random
 from bubble import bubble_sort
 from selection import selection_sort
 from insertion import insertion_sort
+from shell import shell_sort
 
 # 元データ生成
 data_len = 100
@@ -35,3 +36,12 @@ print("==============")
 sorted_by_insertion = insertion_sort(unsorted_for_insertion)
 print(sorted_by_insertion)
 print("======= insertion =======")
+
+# 挿入ソート実行
+print("======= shell =======")
+unsorted_for_shell = copy.deepcopy(unsorted)
+print(unsorted_for_shell)
+print("==============")
+sorted_by_shell = shell_sort(unsorted_for_shell)
+print(sorted_by_shell)
+print("======= shell =======")
