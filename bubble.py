@@ -1,7 +1,7 @@
-def bubble_sort(li):
-    n = len(li)
+def bubble_sort(lst):
+    n = len(lst)
     for i in range(n):
         for j in range(n-1):
-            if li[j] >= li[j+1]:
-                li[j], li[j+1] = li[j+1], li[j]
-    return li
+            if lst[j] >= lst[j+1]:
+                lst[j], lst[j+1] = lst[j+1], lst[j]
+    return lst

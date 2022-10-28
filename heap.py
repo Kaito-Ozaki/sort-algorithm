@@ -1,25 +1,25 @@
-def heap_sort(li):
-    n = len(li)
+def heap_sort(lst):
+    n = len(lst)
     for i in range(n//2-1, -1, -1):
-        heapify(li, i, n)
+        heapify(lst, i, n)
 
     for i in range(n-1, 0, -1):
-        li[0], li[i] = li[i], li[0]
-        heapify(li, 0, i)
+        lst[0], lst[i] = lst[i], lst[0]
+        heapify(lst, 0, i)
         
-    return li
+    return lst
 
-def heapify(li, i, heap_size):
+def heapify(lst, i, heap_size):
     largest = i
     left = 2 * i + 1
     right = 2 * i + 2
 
-    if left < heap_size and li[left] > li[largest]:
+    if left < heap_size and lst[left] > lst[largest]:
         largest = left
 
-    if right < heap_size and li[right] > li[largest]:
+    if right < heap_size and lst[right] > lst[largest]:
         largest = right
 
     if largest != i:
-        li[largest], li[i] = li[i], li[largest]
-        heapify(li, largest, heap_size)
+        lst[largest], lst[i] = lst[i], lst[largest]
+        heapify(lst, largest, heap_size)

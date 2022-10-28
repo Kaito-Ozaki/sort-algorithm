@@ -1,21 +1,21 @@
-def quick_sort(li):
-    if len(li) <= 1:
-        return li
+def quick_sort(lst):
+    if len(lst) <= 1:
+        return lst
 
-    pivot = li[0]
-    l = []
-    c = []
-    r = []
+    pivot = lst[0]
+    left = []
+    center = []
+    right = []
 
-    for v in li:
+    for v in lst:
         if v < pivot:
-            l.append(v)
+            left.append(v)
         elif v > pivot:
-            r.append(v)
+            right.append(v)
         else:
-            c.append(v)
+            center.append(v)
     
-    l = quick_sort(l)
-    r = quick_sort(r)
+    left = quick_sort(left)
+    right = quick_sort(right)
 
-    return l + c + r
+    return left + center + right

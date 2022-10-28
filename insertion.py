@@ -1,10 +1,10 @@
-def insertion_sort(li):
-    for i in range(1, len(li)):
-        tmp = li[i]
+def insertion_sort(lst):
+    for i in range(1, len(lst)):
+        tmp = lst[i]
         j = i - 1
 
-        while j >= 0 and li[j] > tmp:
-            li[j+1] = li[j]
+        while j >= 0 and lst[j] > tmp:
+            lst[j+1] = lst[j]
             j -= 1
-        li[j+1] = tmp
-    return li
+        lst[j+1] = tmp
+    return lst
