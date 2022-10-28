@@ -1,6 +1,3 @@
-from turtle import left
-
-
 def quick_sort(li):
     if len(li) <= 1:
         return li
