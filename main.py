@@ -6,6 +6,7 @@ from selection import selection_sort
 from insertion import insertion_sort
 from shell import shell_sort
 from quick import quick_sort
+from heap import heap_sort
 
 # 元データ生成
 data_len = 100
@@ -52,6 +53,15 @@ print("======= quick =======")
 unsorted_for_quick = copy.deepcopy(unsorted)
 print(unsorted_for_quick)
 print("==============")
-sorted_by_quick = quick_sort(unsorted_for_shell)
+sorted_by_quick = quick_sort(unsorted_for_quick)
 print(sorted_by_quick)
 print("======= quick =======")
+
+# ヒープソート実行
+print("======= heap =======")
+unsorted_for_heap = copy.deepcopy(unsorted)
+print(unsorted_for_heap)
+print("==============")
+sorted_by_heap = heap_sort(unsorted_for_heap)
+print(sorted_by_heap)
+print("======= heap =======")
