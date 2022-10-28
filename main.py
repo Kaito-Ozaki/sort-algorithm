@@ -37,7 +37,7 @@ sorted_by_insertion = insertion_sort(unsorted_for_insertion)
 print(sorted_by_insertion)
 print("======= insertion =======")
 
-# 挿入ソート実行
+# シェルソート実行
 print("======= shell =======")
 unsorted_for_shell = copy.deepcopy(unsorted)
 print(unsorted_for_shell)
