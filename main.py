@@ -7,6 +7,7 @@ from insertion import insertion_sort
 from shell import shell_sort
 from quick import quick_sort
 from heap import heap_sort
+from merge import merge_sort
 
 # 元データ生成
 data_len = 100
@@ -65,3 +66,12 @@ print("==============")
 sorted_by_heap = heap_sort(unsorted_for_heap)
 print(sorted_by_heap)
 print("======= heap =======")
+
+# マージソート実行
+print("======= merge =======")
+unsorted_for_merge = copy.deepcopy(unsorted)
+print(unsorted_for_merge)
+print("==============")
+sorted_by_merge = merge_sort(unsorted_for_merge)
+print(sorted_by_merge)
+print("======= merge =======")
