@@ -5,6 +5,7 @@ from bubble import bubble_sort
 from selection import selection_sort
 from insertion import insertion_sort
 from shell import shell_sort
+from quick import quick_sort
 
 # 元データ生成
 data_len = 100
@@ -45,3 +46,12 @@ print("==============")
 sorted_by_shell = shell_sort(unsorted_for_shell)
 print(sorted_by_shell)
 print("======= shell =======")
+
+# クイックソート実行
+print("======= quick =======")
+unsorted_for_quick = copy.deepcopy(unsorted)
+print(unsorted_for_quick)
+print("==============")
+sorted_by_quick = quick_sort(unsorted_for_shell)
+print(sorted_by_quick)
+print("======= quick =======")
